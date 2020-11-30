@@ -8,6 +8,7 @@
 #include "Zadania/Zadanie72.h"
 #include "Zadania/Zadanie73.h"
 #include "Zadania/Zadanie74.h"
+#include "Zadania/Zadanie75.h"
 
 void globalCallback(int option) {
     std::cout << "Global Callback | Selection: " << option << std::endl;
@@ -33,6 +34,11 @@ void zadanie4() {
     sort_smol_tab sortSmolTab;
 }
 
+void zadanie5(){
+    std::cout << "Item Callback | Selected option %%" << std::endl;
+    input_freq inputFreq;
+}
+
 int main(int argc, const char * argv[]) {
 
 
@@ -43,6 +49,7 @@ int main(int argc, const char * argv[]) {
     zadania.addItem("Zadanie 2", &zadanie2); // You can have global callback and individual callbacks
     zadania.addItem("Zadanie 3", &zadanie3);
     zadania.addItem("Zadanie 4", &zadanie4);
+    zadania.addItem("Zadanie 5", &zadanie5);
 
     zadania.printMenu();
 
