@@ -11,6 +11,7 @@
 #include "Zadania/Zadanie75.h"
 #include "Zadania/Zadanie76.h"
 #include "Zadania/Zadanie77.h"
+#include "Zadania/Zadanie78.h"
 
 void globalCallback(int option) {
     std::cout << "Global Callback | Selection: " << option << std::endl;
@@ -51,6 +52,11 @@ void zadanie7(){
     cool_tab coolTab;
 }
 
+void zadanie8(){
+    std::cout << "Item Callback | Selected option %%" << std::endl;
+    user_variables userVariables;
+}
+
 int main(int argc, const char * argv[]) {
 
 
@@ -64,6 +70,7 @@ int main(int argc, const char * argv[]) {
     zadania.addItem("Zadanie 5", &zadanie5);
     zadania.addItem("Zadanie 6", &zadanie6);
     zadania.addItem("Zadanie 7", &zadanie7);
+    zadania.addItem("Zadanie 8", &zadanie8);
 
     zadania.printMenu();
 
