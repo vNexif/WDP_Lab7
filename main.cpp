@@ -10,6 +10,7 @@
 #include "Zadania/Zadanie74.h"
 #include "Zadania/Zadanie75.h"
 #include "Zadania/Zadanie76.h"
+#include "Zadania/Zadanie77.h"
 
 void globalCallback(int option) {
     std::cout << "Global Callback | Selection: " << option << std::endl;
@@ -45,6 +46,11 @@ void zadanie6(){
     find_max findMax;
 }
 
+void zadanie7(){
+    std::cout << "Item Callback | Selected option %%" << std::endl;
+    cool_tab coolTab;
+}
+
 int main(int argc, const char * argv[]) {
 
 
@@ -57,6 +63,7 @@ int main(int argc, const char * argv[]) {
     zadania.addItem("Zadanie 4", &zadanie4);
     zadania.addItem("Zadanie 5", &zadanie5);
     zadania.addItem("Zadanie 6", &zadanie6);
+    zadania.addItem("Zadanie 7", &zadanie7);
 
     zadania.printMenu();
 
