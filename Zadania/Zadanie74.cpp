@@ -106,7 +106,7 @@ void sort_smol_tab::QuickSort_ASC(){
     this -> Vect_To_Tab();
     std::qsort( this -> smol_tab, 30, sizeof(int), this -> Compare_ASC );
     for ( int i : this -> smol_tab ) {
-        std::cout << "Chuj :" << i << std::endl;
+        std::cout << i << std::endl;
     }
 }
 
@@ -119,6 +119,6 @@ void sort_smol_tab::QuickSort_DSC() {
     std::qsort( this -> smol_tab, 30, sizeof(int), this -> Compare_DSC );
     std::reverse( this -> smol_tab, this -> smol_tab + (sizeof( this -> smol_tab )/ sizeof( this -> smol_tab[0] )));
     for ( int i : this -> smol_tab ) {
-        std::cout << "Chuj :" << i << std::endl;
+        std::cout << i << std::endl;
     }
 }

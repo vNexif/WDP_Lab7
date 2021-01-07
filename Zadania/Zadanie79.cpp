@@ -31,8 +31,8 @@ void ciagipociagi::find_pociag() {
                     this -> max_dlugosc = this -> dlugosc;
 
                     this -> poczatek = this -> poczatek_var;
-
                 }
+
             } else {
                 this -> poczatek_var = i;
                 this -> dlugosc = 1;

@@ -11,6 +11,7 @@ smol_tab::smol_tab() {
 #endif
 }
 
+
 void smol_tab::fill_vector() {
     std::random_device rd;
     std::mt19937_64 mt(rd());
@@ -24,6 +25,5 @@ void smol_tab::fill_vector() {
 void smol_tab::print_vector() {
     for (int i : smol_v) {
         std::cout << i << std::endl;
-
     }
 }
